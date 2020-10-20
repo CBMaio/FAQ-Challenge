@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+
+.bg-gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg,  hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+}
+
+.main-container {
+    height: 70vh;
+    width: 75%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.images-section {
+   border: 1px solid black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-container-div{
+    position: relative;
+/*    border: 1px solid violet; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.woman-bg-desk {
+/*     border: 1px solid green; */
+    position: relative;
+    width: 115%;
+    left: -18%;
+    max-height: 80%;
+    max-width: 118%;
+    z-index: 1;
+}
+
+.shadow-woman-img {
+    position: absolute;
+    width: 200%;
+/*     border: 1px solid red; */
+    bottom: -50%;
+    right: 3%;
+}
+
+.box-container-section {
+    position: absolute;
+    bottom: 30%;
+/*     border: 1px solid; */
+    z-index: 1;
+    left: 5%;
+}
+
+.box-container-section img {
+    width: 150px;
+}
+
+@media (max-height: 678px) and (min-width: 1150px){
+    .woman-bg-desk {
+        max-height: 50vh;
+        width: auto;
+    }
+
+    .shadow-woman-img {
+        max-height: 106vh;
+        width: auto;
+        right: 18%;
+    }
+}
