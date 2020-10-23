@@ -11,7 +11,7 @@
     <section class="bg-gradient">
         <div class="main-container">
             <section class="images-section">
-              <div class="img-container-div">
+              <div class="img-container-div d-flex">
                 <img 
                     alt="background image shadow"
                     class="woman-bg-desk"
@@ -24,65 +24,86 @@
                 />
               </div>
             </section>
-            <section class="box-container-section">
+            <div class="box-container-section">
                 <img 
                 alt="box desktop"
                 class="box-illustration-img"
                 src="./images/illustration-box-desktop.svg" 
                 />
-            </section>
-            <section>
-                <div>
-                    <h3>FAQ</h3>
+            </div>
+            <section class="faq-section d-flex">
+                <div class="faq-title-container">
+                    <h3 class="faq-title">FAQ</h3>
                 </div>
-                <div>
+                <div class="faq-container d-flex">
                     <div>
-                        <p>How many team members can I invite?
+                        <p class="faq-question" id="question-p">How many team members can I invite?
                             <span>
-                                <img src="./images/icon-arrow-down.svg" alt="icon arrow down" />
+                                <img 
+                                    alt="icon arrow down"
+                                    id="img-arrow"
+                                    src="./images/icon-arrow-down.svg" 
+                                />
                             </span>                            
                         </p>
-                        <span>
+                        <span class="answer hidden" id="answer">
                             <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan. </p>
                         </span>
                     </div>
                     <div>
-                        <p>What is the maximum file upload size? 
+                        <p class="faq-question question-open-text" id="question-p">What is the maximum file upload size? 
                             <span>
-                                <img src="./images/icon-arrow-down.svg" alt="icon arrow down" />
+                                <img 
+                                    alt="icon arrow down" 
+                                    class="question-open" 
+                                    id="img-arrow"
+                                    src="./images/icon-arrow-down.svg" 
+                                />
                             </span>   
                         </p>
-                        <span>
+                        <span class="answer"  id="answer">
                             <p>No more than 2GB. All files in your account must fit your allotted storage space. </p>
                         </span>
                     </div>
                     <div>
-                        <p>How do I reset my password? 
+                        <p class="faq-question" id="question-p">How do I reset my password? 
                             <span>
-                                <img src="./images/icon-arrow-down.svg" alt="icon arrow down" />
-                            </span>   
+                                <img 
+                                    alt="icon arrow down"
+                                    id="img-arrow"
+                                    src="./images/icon-arrow-down.svg" 
+                                />
+                            </span>    
                         </p>
-                        <span>
+                        <span class="answer hidden" id="answer" >
                             <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you. </p>
                         </span>
                     </div>
                     <div>
-                        <p>Can I cancel my subscription? 
+                        <p class="faq-question" id="question-p">Can I cancel my subscription? 
                             <span>
-                                <img src="./images/icon-arrow-down.svg" alt="icon arrow down" />
-                            </span>   
+                                <img 
+                                    alt="icon arrow down"
+                                    id="img-arrow"
+                                    src="./images/icon-arrow-down.svg" 
+                                />
+                            </span>  
                         </p>
-                        <span>
+                        <span class="answer hidden" id="answer">
                             <p>Can I cancel my subscription? </p>
                         </span>
                     </div>
                     <div>
-                        <p>Do you provide additional support? 
+                        <p class="faq-question" id="question-p">Do you provide additional support? 
                             <span>
-                                <img src="./images/icon-arrow-down.svg" alt="icon arrow down" />
+                                <img 
+                                    alt="icon arrow down"
+                                    id="img-arrow"
+                                    src="./images/icon-arrow-down.svg" 
+                                />
                             </span>   
                         </p>
-                        <span>
+                        <span class="answer hidden" id="answer">
                             <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
                         </span>
                     </div>
@@ -90,5 +111,7 @@
             </section>
         </div>
     </section>
+
+<script src="app.js"></script>
 </body>
 </html>

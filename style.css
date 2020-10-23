@@ -22,18 +22,22 @@
 }
 
 .images-section {
-   border: 1px solid black;
+/*    border: 1px solid black; */
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
+    float: left;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .img-container-div{
     position: relative;
 /*    border: 1px solid violet; */
-   display: flex;
-   flex-direction: column;
    justify-content: center;
 }
 
@@ -67,6 +71,61 @@
     width: 150px;
 }
 
+.faq-section {
+    width: 45%;
+    float: right;
+    height: 100%;   
+    justify-content: center;
+}
+
+.faq-title {
+    font-size: 2rem;
+}
+
+.faq-container {
+/*     border: 1px solid red; */
+    width: 80%;
+    height: 55%;
+    justify-content: space-around;
+}
+
+.faq-container p {
+    font-size: 13px;
+}
+
+.hidden {
+    display: none;
+}
+
+.faq-question {
+    color: hsl(237, 12%, 33%);   
+    cursor: pointer;
+}
+
+.faq-question span {
+    float: right;
+}
+
+.faq-question span img{
+    vertical-align: middle;
+}
+
+.question-open {
+    transform: rotate(180deg);
+}
+
+.question-open-text {
+    color: black;
+    font-weight: 700;
+}
+
+.answer p {
+    margin-top: 10px;
+    line-height: 20px;
+    width: 95%;
+    color: hsl(240, 6%, 50%);
+}
+
 @media (max-height: 678px) and (min-width: 1150px){
     .woman-bg-desk {
         max-height: 50vh;
@@ -77,5 +136,17 @@
         max-height: 106vh;
         width: auto;
         right: 18%;
+    }
+}
+
+@media(min-width: 799px) and (max-width: 1150px) {
+    .faq-container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .faq-section {
+        width: 50%;
     }
 }
