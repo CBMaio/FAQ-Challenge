@@ -6,11 +6,12 @@
     <title>FAQ Challenge</title>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css"/>
 </head>
 <body>  
     <section class="bg-gradient">
         <div class="main-container">
-            <section class="images-section">
+            <section class="images-section hidden-mobile">
               <div class="img-container-div d-flex">
                 <img 
                     alt="background image shadow"
@@ -24,13 +25,17 @@
                 />
               </div>
             </section>
-            <div class="box-container-section">
+            <div class="box-container-section hidden-mobile">
                 <img 
                 alt="box desktop"
                 class="box-illustration-img"
                 src="./images/illustration-box-desktop.svg" 
                 />
             </div>
+            <section class="image-mobile-section">
+                <img src="./images/illustration-woman-online-mobile.svg" alt="Illustration Woman Mobile" class="illustration-mb"/>
+               <img src="./images/bg-pattern-mobile.svg" alt="Bg Pattern Mobile" class="bg-mb"/> 
+            </section>
             <section class="faq-section d-flex">
                 <div class="faq-title-container">
                     <h3 class="faq-title">FAQ</h3>

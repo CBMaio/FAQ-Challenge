@@ -2,30 +2,29 @@ const questionText = document.querySelectorAll("#question-p");
 const answer = document.querySelectorAll("#answer");
 const arrow = document.querySelectorAll("#img-arrow");
 
-questionText.forEach((text) => {
-    text.onclick = function() {
-       /*  text.classList.contains('question-open-text')  */       
-        console.log(answer)
-        console.log(text)
-        /* hiddenAnswer() : showAnswer(); */
+function show() {
+    for (let i = 0; i < questionText.length; i++){
+        questionText[i].onclick = function() {
+            questionText[i].classList.contains('question-open-text') 
+            ? hiddenQuestion(questionText[i], arrow[i], answer[i]) 
+            : showQuestion(questionText[i], arrow[i], answer[i]);
+        }
     }
-});
 
-function showAnswer () {
-    arrow.classList.add('question-open');
-    answer.classList.remove('hidden');
-    questionText.classList.add('question-open-text');
-};
-
-function hiddenAnswer() {
-    arrow.classList.remove('question-open');
-    answer.classList.add('hidden');
-    questionText.classList.remove('question-open-text');
 }
 
-/* const answersOpenAndClose = () => {
-    console.log('ho')
-    questionText.classList.contains('question-open-text') ? hiddenAnswer() : showAnswer() 
-} */
+
+function showQuestion (text, img, paragraph) {
+    text.classList.add('question-open-text');
+    img.classList.add('question-open');
+    paragraph.classList.remove('hidden');
+};
+
+function hiddenQuestion(text, img, paragraph) {
+    text.classList.remove('question-open-text');
+    img.classList.remove('question-open');
+    paragraph.classList.add('hidden');
+}
 
 
+show()
