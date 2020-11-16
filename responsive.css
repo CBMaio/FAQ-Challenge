@@ -41,8 +41,8 @@
 
     .faq-container {
         width: 95%;
-        /* border: 1px solid; */
         margin: 20px auto;
+        justify-content: flex-start;
     }
 
     .faq-container p {
@@ -54,3 +54,9 @@
     }
 }
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .faq-container {
+        width: 95%;
+    }
+}
